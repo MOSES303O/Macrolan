@@ -1,0 +1,128 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract IT connectivity and nationwide service coverage">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E3A39"/>
+      <stop offset="1" stop-color="#072B2A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.34" r="0.6">
+      <stop stop-color="#34C7B8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#34C7B8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#14857F"/>
+      <stop offset="1" stop-color="#0C5C5B"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5BD8CB"/>
+      <stop offset="1" stop-color="#34C7B8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="860" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="860" rx="28" fill="url(#glow)"/>
+
+  <!-- coverage rings -->
+  <g stroke="#1C6F6B" stroke-width="1.4" fill="none" opacity="0.55">
+    <circle cx="600" cy="430" r="120"/>
+    <circle cx="600" cy="430" r="210"/>
+    <circle cx="600" cy="430" r="305"/>
+    <circle cx="600" cy="430" r="400"/>
+  </g>
+  <g stroke="#2E7E7B" stroke-width="1" fill="none" opacity="0.3" stroke-dasharray="3 9">
+    <circle cx="600" cy="430" r="165"/>
+    <circle cx="600" cy="430" r="258"/>
+    <circle cx="600" cy="430" r="352"/>
+  </g>
+
+  <!-- faint dot grid -->
+  <g fill="#1C6F6B" opacity="0.35">
+    <!-- generated grid of dots -->
+    <g>
+      <circle cx="160" cy="150" r="2.4"/><circle cx="260" cy="150" r="2.4"/><circle cx="360" cy="150" r="2.4"/>
+      <circle cx="840" cy="150" r="2.4"/><circle cx="940" cy="150" r="2.4"/><circle cx="1040" cy="150" r="2.4"/>
+      <circle cx="160" cy="250" r="2.4"/><circle cx="1040" cy="250" r="2.4"/>
+      <circle cx="160" cy="630" r="2.4"/><circle cx="260" cy="700" r="2.4"/>
+      <circle cx="940" cy="650" r="2.4"/><circle cx="1040" cy="600" r="2.4"/><circle cx="1040" cy="700" r="2.4"/>
+    </g>
+  </g>
+
+  <!-- connection lines from hub to device nodes -->
+  <g stroke="#3DA39C" stroke-width="2" opacity="0.85" stroke-linecap="round">
+    <line x1="600" y1="430" x2="300" y2="250"/>
+    <line x1="600" y1="430" x2="905" y2="235"/>
+    <line x1="600" y1="430" x2="305" y2="610"/>
+    <line x1="600" y1="430" x2="895" y2="615"/>
+    <line x1="600" y1="430" x2="600" y2="120"/>
+    <line x1="600" y1="430" x2="600" y2="745"/>
+  </g>
+  <g fill="#5BD8CB">
+    <circle cx="450" cy="340" r="3.5"/><circle cx="752" cy="332" r="3.5"/>
+    <circle cx="452" cy="520" r="3.5"/><circle cx="748" cy="522" r="3.5"/>
+  </g>
+
+  <!-- ===== DEVICE NODES ===== -->
+  <!-- node template: rounded square w/ glyph -->
+
+  <!-- Laptop (top-left) -->
+  <g transform="translate(248,198)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <rect x="30" y="34" width="44" height="28" rx="3" fill="none" stroke="url(#mint)" stroke-width="3.2"/>
+    <path d="M24 68 H80 L84 74 H20 Z" fill="url(#mint)"/>
+  </g>
+
+  <!-- Server (top-right) -->
+  <g transform="translate(853,183)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <rect x="34" y="28" width="36" height="20" rx="4" fill="none" stroke="url(#mint)" stroke-width="3"/>
+    <rect x="34" y="56" width="36" height="20" rx="4" fill="none" stroke="url(#mint)" stroke-width="3"/>
+    <circle cx="42" cy="38" r="2.6" fill="#5BD8CB"/><circle cx="42" cy="66" r="2.6" fill="#5BD8CB"/>
+  </g>
+
+  <!-- CCTV camera (bottom-left) -->
+  <g transform="translate(253,558)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <rect x="28" y="40" width="38" height="20" rx="6" fill="none" stroke="url(#mint)" stroke-width="3" transform="rotate(-18 47 50)"/>
+    <circle cx="34" cy="55" r="4" fill="#5BD8CB"/>
+    <path d="M70 44 l10 -6 v26 l-10 -6 Z" fill="url(#mint)"/>
+    <line x1="40" y1="64" x2="40" y2="76" stroke="#2E7E7B" stroke-width="3"/>
+  </g>
+
+  <!-- Printer (bottom-right) -->
+  <g transform="translate(843,563)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <rect x="34" y="46" width="36" height="26" rx="4" fill="none" stroke="url(#mint)" stroke-width="3"/>
+    <rect x="40" y="30" width="24" height="14" rx="2" fill="none" stroke="#2E7E7B" stroke-width="2.6"/>
+    <rect x="40" y="60" width="24" height="16" rx="2" fill="#5BD8CB"/>
+  </g>
+
+  <!-- Shield (top center) -->
+  <g transform="translate(548,68)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <path d="M52 28 l20 8 v18 c0 16 -10 26 -20 30 c-10 -4 -20 -14 -20 -30 v-18 Z" fill="none" stroke="url(#mint)" stroke-width="3.2"/>
+    <path d="M44 56 l6 6 12 -14" fill="none" stroke="#5BD8CB" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Support headset (bottom center) -->
+  <g transform="translate(548,693)">
+    <rect width="104" height="104" rx="22" fill="#0C4A48" stroke="#2E7E7B" stroke-width="1.5"/>
+    <path d="M34 56 a18 18 0 0 1 36 0" fill="none" stroke="url(#mint)" stroke-width="3.2"/>
+    <rect x="30" y="54" width="10" height="18" rx="4" fill="url(#mint)"/>
+    <rect x="64" y="54" width="10" height="18" rx="4" fill="url(#mint)"/>
+    <path d="M69 72 v4 a6 6 0 0 1 -6 6 h-8" fill="none" stroke="#5BD8CB" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== CENTRAL HUB ===== -->
+  <circle cx="600" cy="430" r="66" fill="url(#hub)"/>
+  <circle cx="600" cy="430" r="66" fill="none" stroke="#5BD8CB" stroke-width="1.5" opacity="0.6"/>
+  <!-- logo motif: open ring rotated -->
+  <g transform="translate(600,430) rotate(-45)">
+    <circle r="24" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="113 38"/>
+  </g>
+
+  <!-- corner label chip -->
+  <g>
+    <rect x="44" y="44" width="232" height="44" rx="22" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12"/>
+    <circle cx="70" cy="66" r="5" fill="#34C7B8"/>
+    <text x="86" y="71" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="600" letter-spacing="1.5" fill="#9CC9C5">NATIONWIDE COVERAGE</text>
+  </g>
+</svg>

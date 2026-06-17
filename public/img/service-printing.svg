@@ -1,0 +1,26 @@
+<svg width="480" height="360" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Printing and document solutions">
+  <defs>
+    <linearGradient id="m3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#14857F"/><stop offset="1" stop-color="#0C5C5B"/></linearGradient>
+  </defs>
+  <rect width="480" height="360" rx="24" fill="#EAF4F3"/>
+  <circle cx="380" cy="300" r="120" fill="#DBEDEB"/>
+
+  <!-- paper feeding out (front) -->
+  <rect x="158" y="62" width="164" height="92" rx="8" fill="#fff" stroke="#CFE7E4" stroke-width="2"/>
+  <rect x="180" y="86" width="100" height="8" rx="4" fill="#34C7B8"/>
+  <rect x="180" y="106" width="120" height="7" rx="3.5" fill="#A9D2CE"/>
+  <rect x="180" y="124" width="80" height="7" rx="3.5" fill="#A9D2CE"/>
+
+  <!-- printer body -->
+  <rect x="118" y="150" width="244" height="104" rx="16" fill="url(#m3)"/>
+  <rect x="118" y="150" width="244" height="40" rx="16" fill="#0E2120"/>
+  <rect x="118" y="174" width="244" height="16" fill="#0E2120"/>
+  <rect x="170" y="158" width="140" height="14" rx="4" fill="#0C4A48"/>
+  <circle cx="330" cy="165" r="6" fill="#5BD8CB"/>
+  <rect x="148" y="208" width="120" height="12" rx="6" fill="#0C4A48"/>
+  <circle cx="318" cy="222" r="9" fill="#5BD8CB"/>
+
+  <!-- output tray paper -->
+  <rect x="158" y="254" width="164" height="40" rx="6" fill="#fff" stroke="#CFE7E4" stroke-width="2"/>
+  <rect x="180" y="272" width="120" height="7" rx="3.5" fill="#A9D2CE"/>
+</svg>
