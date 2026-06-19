@@ -8,6 +8,8 @@ Marketing site for **Macrolan Kenya Enterprises Limited**, built with **Next.js 
 - **Scroll-reveal animations** — sections fade and slide into view as you scroll, via an `IntersectionObserver` (`components/Reveal.js`). Supports `up`, `left`, `right` and `scale` variants plus staggered delays.
 - **Accessible motion** — animations are disabled automatically for users with `prefers-reduced-motion: reduce`.
 - No CSS framework — hand-written, themeable CSS in `app/globals.css` (teal brand palette via CSS variables).
+- **Real Macrolan Kenya logo** — the MK monogram (`public/img/logo-mark.png`, with horizontal and stacked lockups + a square `app/icon.png` favicon) extracted from the official brand PDF, used in the nav and footer.
+- **Inquiry form** — any "Get a Quote" / "Request a Quote" / "Email Us" button or email link (anything with a `data-contact` attribute) opens a modal contact form (`components/ContactModal.tsx`). On submit it composes a pre-filled email to **info@macrolan.company**, so visitors send from their own mail app and get replies directly. Contact details live in `lib/content.ts` (`contact`).
 
 ## Getting started
 

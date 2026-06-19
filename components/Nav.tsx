@@ -12,6 +12,7 @@ const LINKS: NavLink[] = [
   { href: "#why", label: "Why Us" },
   { href: "#values", label: "Values" },
   { href: "#clients", label: "Clients" },
+  { href: "#partners", label: "Partners" },
 ];
 
 export default function Nav() {
@@ -28,13 +29,17 @@ export default function Nav() {
   return (
     <nav className="nav">
       <div className="nav__inner container">
-        <a href="#top" className="brand" aria-label="Macrolan home">
-          <span className="brand__mark">
-            <span className="brand__ring" />
-          </span>
+        <a href="#top" className="brand" aria-label="Macrolan Kenya home">
+          <img
+            src="/img/logo-mark.png"
+            alt="Macrolan Kenya"
+            className="brand__logo"
+            width="1498"
+            height="767"
+          />
           <span className="brand__text">
             <span className="brand__name">Macrolan</span>
-            <span className="brand__tag">INSPIRING TECHNOLOGY</span>
+            <span className="brand__tag">KENYA · TOGETHER WE CAN</span>
           </span>
         </a>
 
@@ -46,7 +51,7 @@ export default function Nav() {
           ))}
         </div>
 
-        <a href="#contact" className="nav__cta">
+        <a href="#contact" className="nav__cta" data-contact>
           Get a Quote
         </a>
 
@@ -76,6 +81,7 @@ export default function Nav() {
         <a
           href="#contact"
           className="nav__cta nav__cta--mobile"
+          data-contact
           onClick={() => setOpen(false)}
         >
           Get a Quote

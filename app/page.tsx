@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
+import Partners from "@/components/Partners";
 import {
   stats,
   clientsTop,
@@ -20,9 +21,15 @@ export default function Home() {
             Prequalified ICT supplier to Kenyan Government &amp; enterprise
           </span>
           <span className="topbar__contact">
-            <span>+254 722 819 877</span>
+            <a href="tel:+254722819877" className="topbar__link">+254 722 819 877</a>
             <span className="topbar__sep">|</span>
-            <span>macrolanltd@gmail.com</span>
+            <a
+              href="mailto:info@macrolan.company"
+              className="topbar__link"
+              data-contact
+            >
+              info@macrolan.company
+            </a>
           </span>
         </div>
       </div>
@@ -48,7 +55,7 @@ export default function Home() {
               support services so you can focus on what you do best.
             </p>
             <div className="hero__actions">
-              <a href="#contact" className="btn btn--primary btn--lg">
+              <a href="#contact" className="btn btn--primary btn--lg" data-contact>
                 Request a Quote
               </a>
               <a href="#services" className="btn btn--ghost btn--lg">
@@ -169,7 +176,7 @@ export default function Home() {
               without ever compromising the professionalism and efficiency of
               your organization.
             </p>
-            <a href="#contact" className="btn btn--mint">
+            <a href="#contact" className="btn btn--mint" data-contact>
               Partner with Macrolan
             </a>
           </Reveal>
@@ -285,7 +292,11 @@ export default function Home() {
                   solution around it.
                 </p>
                 <div className="cta__actions">
-                  <a href="mailto:info@macrolantechnologies.com" className="btn btn--white">
+                  <a
+                    href="mailto:info@macrolan.company"
+                    className="btn btn--white"
+                    data-contact
+                  >
                     Email Us
                   </a>
                   <a href="tel:+254722819877" className="btn btn--outline-light">
@@ -310,16 +321,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ============ TECHNOLOGY PARTNERS ============ */}
+      <Partners />
+
       {/* ============ FOOTER ============ */}
       <footer className="footer">
         <div className="container">
           <div className="footer__top">
             <div>
               <div className="brand brand--footer">
-                <span className="brand__mark brand__mark--sm">
-                  <span className="brand__ring" />
+                <span className="brand__logo-tile">
+                  <img
+                    src="/img/logo-mark.png"
+                    alt="Macrolan Kenya"
+                    width="1498"
+                    height="767"
+                  />
                 </span>
-                <span className="brand__name brand__name--light">Macrolan</span>
+                <span className="brand__name brand__name--light">
+                  Macrolan Kenya
+                </span>
               </div>
               <p className="footer__about">
                 Macrolan Kenya Enterprises Limited — inspiring technology and
@@ -342,9 +363,10 @@ export default function Home() {
             <div className="footer__col">
               <div className="footer__heading">Get in touch</div>
               <span>Ring Road Court, Parklands, Nairobi</span>
-              <span>+254 722 819 877</span>
-              <span>macrolanltd@gmail.com</span>
-              <span>info@macrolantechnologies.com</span>
+              <a href="tel:+254722819877">+254 722 819 877</a>
+              <a href="mailto:info@macrolan.company" data-contact>
+                info@macrolan.company
+              </a>
             </div>
           </div>
           <div className="footer__bottom">

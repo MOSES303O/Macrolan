@@ -1,5 +1,14 @@
 // Central content for the Macrolan landing page.
 
+export const contact = {
+  email: "info@macrolan.company",
+  phonePrimary: "+254 722 819 877",
+  phoneSecondary: "+254 735 693 079",
+  addressLine1: "Ring Road Court, 08 Ring Road,",
+  addressLine2: "Parklands, Nairobi",
+  poBox: "P.O. Box 41733 – GPO 00100",
+} as const;
+
 export interface Stat {
   num: string;
   label: string;
