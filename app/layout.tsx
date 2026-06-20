@@ -4,9 +4,9 @@ import type { ReactNode } from "react";
 import ContactModal from "@/components/ContactModal";
 
 export const metadata: Metadata = {
-  title: "Macrolan Kenya Enterprises — Inspiring Technology",
+  title: "Macrolan Kenya — Tailor-Made IT Solutions in Kenya",
   description:
-    "Professional IT solutions in Kenya since 2014: IT hardware, software, CCTV, printing and security consultancy. Prequalified ICT supplier to government and enterprise.",
+    "Empowering Kenyan businesses with tailor-made IT solutions since 2014. Prequalified ICT supplier to the Kenyan Government: IT hardware, software, CCTV, data recovery and security consultancy.",
   keywords: [
     "Macrolan",
     "IT Kenya",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0C5C5B",
+  themeColor: "#0B5FB5",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>

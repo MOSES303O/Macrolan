@@ -9,10 +9,10 @@ interface NavLink {
 
 const LINKS: NavLink[] = [
   { href: "#services", label: "Services" },
-  { href: "#why", label: "Why Us" },
-  { href: "#values", label: "Values" },
-  { href: "#clients", label: "Clients" },
+  { href: "#projects", label: "Projects" },
+  { href: "#about", label: "About" },
   { href: "#partners", label: "Partners" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 export default function Nav() {
@@ -51,8 +51,8 @@ export default function Nav() {
           ))}
         </div>
 
-        <a href="#contact" className="nav__cta" data-contact>
-          Get a Quote
+        <a href="#contact" className="btn btn--accent nav__cta" data-contact>
+          Get a Free Quote
         </a>
 
         <button
@@ -80,11 +80,11 @@ export default function Nav() {
         ))}
         <a
           href="#contact"
-          className="nav__cta nav__cta--mobile"
+          className="btn btn--accent nav__cta--mobile"
           data-contact
           onClick={() => setOpen(false)}
         >
-          Get a Quote
+          Get a Free Quote
         </a>
       </div>
     </nav>
