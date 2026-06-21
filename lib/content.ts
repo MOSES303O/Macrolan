@@ -24,7 +24,19 @@ export interface Service {
   title: string;
   desc: string;
   action: string;
+  /** Optional sub-items, e.g. industry sectors for "Industry-Specific Solutions". */
+  bullets?: string[];
 }
+
+// Sectors covered by "Industry-Specific Solutions" (also used in the nav dropdown).
+export const industries: string[] = [
+  "Government",
+  "Finance",
+  "Healthcare",
+  "Education",
+  "Hospitality",
+  "Retail",
+];
 
 export interface WhyPoint {
   n: string;
@@ -73,39 +85,40 @@ export const clientsTop: string[] = [
 export const services: Service[] = [
   {
     img: "/img/service-it-hardware.svg",
-    title: "IT Hardware",
-    desc: "Laptops, desktops, servers, UPS, printers and scanners — supplied, delivered and installed.",
+    title: "Hardware & Infrastructure",
+    desc: "Laptops, desktops, servers, UPS and network infrastructure — supplied, delivered and installed.",
     action: "View Products",
   },
   {
+    img: "/img/service-software.svg",
+    title: "Software & Cloud Solutions",
+    desc: "Licensed software and cloud provisioning, deployed and configured around how you work.",
+    action: "Get Licensing",
+  },
+  {
+    img: "/img/service-security.svg",
+    title: "Cybersecurity & Data Protection",
+    desc: "Securing your digital systems, recovering lost data and managing IT assets end to end.",
+    action: "Protect My Business",
+  },
+  {
     img: "/img/service-cctv.svg",
-    title: "CCTV Installation",
-    desc: "Design, installation and surveillance systems that keep your premises secure 24/7.",
+    title: "Surveillance & Security Systems",
+    desc: "CCTV design, installation and round-the-clock monitoring that keeps your premises secure.",
     action: "Request a Demo",
   },
   {
     img: "/img/service-ict-support.svg",
-    title: "ICT Support",
-    desc: "24/7 technical support for businesses, so you can focus on your core operations.",
+    title: "ICT Support & Maintenance",
+    desc: "Responsive technical support and proactive maintenance so your systems stay online.",
     action: "Contact Support",
   },
   {
-    img: "/img/service-security.svg",
-    title: "Security Consultancy",
-    desc: "Expert consultancy that protects your people, assets and information.",
-    action: "Book a Consultation",
-  },
-  {
-    img: "/img/service-software.svg",
-    title: "Software Solutions",
-    desc: "Licensed software provisioning, deployment and configuration tailored to your operations.",
-    action: "Get Licensing",
-  },
-  {
-    img: "/img/service-data-recovery.svg",
-    title: "Data Recovery & Restoration",
-    desc: "Recovery and restoration of lost or corrupted data from drives, servers and storage devices.",
-    action: "Recover Data",
+    img: "/img/service-industry.svg",
+    title: "Industry-Specific Solutions",
+    desc: "IT tailored to your sector's workflows, compliance and uptime needs.",
+    action: "Explore Sectors",
+    bullets: industries,
   },
 ];
 
@@ -125,10 +138,10 @@ export const heroImages: HeroImage[] = [
 ];
 
 export const whyPoints: WhyPoint[] = [
-  { n: "01", title: "Save money", desc: "Market knowledge and expertise that cut cost without cutting corners." },
-  { n: "02", title: "Professionalism", desc: "Courteous, conscientious and respectful in every engagement." },
-  { n: "03", title: "Timely delivery", desc: "A track record of quality work delivered on schedule, every time." },
-  { n: "04", title: "Tailor-made", desc: "Solutions built around your needs — not off-the-shelf compromises." },
+  { n: "01", title: "Cost savings", desc: "Market knowledge that cuts cost without cutting corners." },
+  { n: "02", title: "Proven expertise", desc: "A skilled team with 11+ years across hardware, networks and security." },
+  { n: "03", title: "On-time delivery", desc: "A track record of quality work delivered on schedule, every time." },
+  { n: "04", title: "Built around you", desc: "Solutions shaped to your needs — never off-the-shelf compromises." },
 ];
 
 export const values: Value[] = [

@@ -4,16 +4,17 @@ import type { ReactNode } from "react";
 import ContactModal from "@/components/ContactModal";
 
 export const metadata: Metadata = {
-  title: "Macrolan Kenya — Tailor-Made IT Solutions in Kenya",
+  title: "Macrolan Kenya — Secure. Recover. Optimize.",
   description:
-    "Empowering Kenyan businesses with tailor-made IT solutions since 2014. Prequalified ICT supplier to the Kenyan Government: IT hardware, software, CCTV, data recovery and security consultancy.",
+    "Macrolan Kenya Enterprises provides cyber security, data recovery, IT asset management and infrastructure solutions — so you can concentrate on your business, not your IT. Prequalified ICT supplier to the Kenyan Government.",
   keywords: [
     "Macrolan",
     "IT Kenya",
+    "cybersecurity Kenya",
+    "data recovery Nairobi",
     "CCTV installation Nairobi",
     "ICT supplier Kenya",
-    "IT hardware",
-    "security consultancy",
+    "IT asset management",
   ],
 };
 

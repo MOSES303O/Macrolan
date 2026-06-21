@@ -52,13 +52,14 @@ export default function Home() {
               Trusted IT partner in Kenya since 2014
             </div>
             <h1 className="hero__title">
-              Empowering Kenyan businesses with{" "}
-              <span className="hero__title-accent">tailor-made IT solutions.</span>
+              <span className="hero__title-accent">Secure. Recover. Optimize.</span>
+              <br />
+              IT solutions for businesses in Kenya.
             </h1>
             <p className="hero__lead">
-              Prequalified ICT supplier to the Kenyan Government · 11+ years of
-              trusted service in IT hardware, software, CCTV, data recovery and
-              security consultancy.
+              Macrolan Kenya Enterprises provides cyber security, data recovery,
+              IT asset management and infrastructure solutions — so you can
+              concentrate on your business, not your IT issues.
             </p>
             <div className="hero__actions">
               <a href={telPrimary} className="btn btn--primary btn--lg">
@@ -152,6 +153,13 @@ export default function Home() {
                 </div>
                 <h3 className="service-card__title">{sv.title}</h3>
                 <p className="service-card__desc">{sv.desc}</p>
+                {sv.bullets && (
+                  <ul className="service-card__tags">
+                    {sv.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                )}
                 <a href="#contact" className="service-card__action" data-contact>
                   {sv.action} <span aria-hidden>→</span>
                 </a>
@@ -372,10 +380,11 @@ export default function Home() {
             </div>
             <div className="footer__col">
               <div className="footer__heading">Services</div>
-              <a href="#services">IT Hardware</a>
-              <a href="#services">Software Solutions</a>
-              <a href="#services">CCTV Installation</a>
-              <a href="#services">Security Consultancy</a>
+              <a href="#services">Hardware &amp; Infrastructure</a>
+              <a href="#services">Software &amp; Cloud</a>
+              <a href="#services">Cybersecurity &amp; Data Protection</a>
+              <a href="#services">Surveillance &amp; Security</a>
+              <a href="#services">ICT Support &amp; Maintenance</a>
             </div>
             <div className="footer__col">
               <div className="footer__heading">Get in touch</div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { services } from "@/lib/content";
 
 interface NavLink {
   href: string;
@@ -8,7 +9,6 @@ interface NavLink {
 }
 
 const LINKS: NavLink[] = [
-  { href: "#services", label: "Services" },
   { href: "#projects", label: "Projects" },
   { href: "#about", label: "About" },
   { href: "#partners", label: "Partners" },
@@ -44,6 +44,21 @@ export default function Nav() {
         </a>
 
         <div className="nav__links">
+          <div className="nav__drop">
+            <a href="#services" className="nav__link nav__drop-toggle">
+              Services <span className="nav__caret" aria-hidden>▾</span>
+            </a>
+            <div className="nav__drop-menu">
+              {services.map((s) => (
+                <a key={s.title} href="#services" className="nav__drop-item">
+                  <span className="nav__drop-title">{s.title}</span>
+                  {s.bullets && (
+                    <span className="nav__drop-sub">{s.bullets.join(" · ")}</span>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} className="nav__link">
               {l.label}
@@ -68,6 +83,17 @@ export default function Nav() {
       </div>
 
       <div className={`nav__mobile ${open ? "is-open" : ""}`}>
+        <div className="nav__mobile-group">Services</div>
+        {services.map((s) => (
+          <a
+            key={s.title}
+            href="#services"
+            className="nav__mobile-link nav__mobile-link--sub"
+            onClick={() => setOpen(false)}
+          >
+            {s.title}
+          </a>
+        ))}
         {LINKS.map((l) => (
           <a
             key={l.href}
